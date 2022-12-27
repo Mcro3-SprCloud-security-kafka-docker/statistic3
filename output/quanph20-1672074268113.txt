@@ -1,0 +1,1 @@
+StatisticDTO(message=P3: Added group name: f at 27/12/2022 12:04:27, createBy=quanph20, accountId=null, clazz=GROUP)

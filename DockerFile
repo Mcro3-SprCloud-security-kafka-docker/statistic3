@@ -1,0 +1,6 @@
+# pull base images from base
+from openjdk:8-jdk-alpine
+#copy buildFile.jar to docker
+copy target/statistic-service-0.0.1-SNAPSHOT.jar statistic-service-0.1.jar
+# run jar buildFile
+ENTRYPOINT ["java", "-jar", "/statistic-service-0.1.jar"]

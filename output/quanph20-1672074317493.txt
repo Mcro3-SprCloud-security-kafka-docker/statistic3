@@ -1,0 +1,1 @@
+StatisticDTO(message=P3: Search all groups: Group 1 at 27/12/2022 12:05:17, createBy=quanph20, accountId=null, clazz=GROUP)

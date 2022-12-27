@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mcro3-statistic-service
+
+  config:
+    #    local:
+    #    import: configserver:http://localhost:9025
+    #    docker:
+    import: configserver:http://localhost:9025
+  cloud:
+    config:
+      fail-fast: true
+      username: mcro3-configserver
+      password: mcro3-123
