@@ -1,0 +1,1 @@
+StatisticDTO(message=Statistic-service: Deleted logs ... size: 0, createBy=Statistic-service, accountId=1, clazz=)

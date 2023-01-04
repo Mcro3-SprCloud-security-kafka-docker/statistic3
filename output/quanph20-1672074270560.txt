@@ -1,1 +1,0 @@
-StatisticDTO(message=P3: Deleted group at 27/12/2022 12:04:30, createBy=quanph20, accountId=null, clazz=GROUP)

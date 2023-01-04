@@ -1,5 +1,6 @@
 package com.viettel.statisticservice;
 
+import net.javacrumbs.shedlock.spring.annotation.EnableSchedulerLock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -8,10 +9,13 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableFeignClients
 @EnableEurekaClient
+@EnableSchedulerLock(defaultLockAtMostFor = "PT20M")
+@EnableScheduling
 public class StatisticServiceApplication {
     private static final Logger log = LoggerFactory.getLogger(StatisticServiceApplication.class);
     public static void main(String[] args) {
